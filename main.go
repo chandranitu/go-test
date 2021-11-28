@@ -1,13 +1,18 @@
 package main
-import (
-	"fmt"
-)
+
+import "fmt"
 
 func main() {
-	blog := New()
-	fmt.Println(blog)
-	blog.SaveArticle(Article{"My first Blog post", "Today, we will be talking about blogging"})
-	fmt.Println(blog)
-}
+   var n [10]int /* n is an array of 10 integers */
+   var i,j int
 
-//go run blog.go main.go
+   /* initialize elements of array n to 0 */         
+   for i = 0; i < 10; i++ {
+      n[i] = i + 100 /* set element at location i to i + 100 */
+   }
+   
+   /* output each array element's value */
+   for j = 0; j < 10; j++ {
+      fmt.Printf("Element[%d] = %d\n", j, n[j] )
+   }
+}
